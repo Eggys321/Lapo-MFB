@@ -70,10 +70,10 @@ export const analyticsData = [
 ]
 
 export const cardRequests = [
-    { branch: 'Corporate', type: 'Instant', qty: 10, status: 'Ready', color: 'bg-green-100 text-green-700' },
-    { branch: 'Corporate', type: 'Personalized', qty: 10, status: 'In Progress', color: 'bg-yellow-100 text-yellow-700' },
-    { branch: 'Corporate', type: 'Personalized', qty: 10, status: 'Acknowledged', color: 'bg-blue-100 text-blue-700' },
-    { branch: 'Corporate', type: 'Instant', qty: 10, status: 'Pending', color: 'bg-gray-100 text-gray-700' },
+    { branch: 'Corporate', type: 'Instant', qty: 10, status: 'Ready', color: 'bg-[#ABEFC6] text-[#067647]' },
+    { branch: 'Corporate', type: 'Personalized', qty: 10, status: 'In Progress', color: 'bg-[#FEDF89] text-[#B54708] ' },
+    { branch: 'Corporate', type: 'Personalized', qty: 10, status: 'Acknowledged', color: 'bg-[#B2DDFF] text-[#175CD3] ' },
+    { branch: 'Corporate', type: 'Instant', qty: 10, status: 'Pending', color: 'bg-[#EAECF0] text-[#344054] ' },
   ];
 
  export const pieData = [

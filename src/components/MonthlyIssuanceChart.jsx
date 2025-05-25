@@ -21,20 +21,21 @@ import {
   export default function MonthlyIssuanceChart() {
     return (
       <div className="p-4 bg-white shadow rounded-lg">
-        <h2 className="text-lg font-medium mb-4">Monthly Issuance</h2>
+        <h2 className="text-[18px] font-[500] mb-4 text-[#121212]  ">Monthly Issuance</h2>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={data} barGap={8}>
-            <XAxis dataKey="name" />
-            <YAxis />
+            <XAxis dataKey="name" className='text-[#667085] font-[400] text-[11.76px] ' />
+            <YAxis ticks={[0, 20, 40, 60, 80, 100]} domain={[0, 100]} />
             <Tooltip />
             <Legend
               verticalAlign="bottom"
               height={36}
               iconType="circle"
               wrapperStyle={{ paddingTop: 10 }}
+              
             />
-            <Bar dataKey="Personalized" stackId="a" fill="#003087" />
-            <Bar dataKey="Instant" stackId="a" fill="#DDEBFB" />
+            <Bar dataKey="Personalized" stackId="a" fill="#014DAF"  />
+            <Bar dataKey="Instant"  stackId="a" fill="#CCE2FF"  radius={[8, 8, 0, 0]}/>
           </BarChart>
         </ResponsiveContainer>
       </div>

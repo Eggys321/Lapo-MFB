@@ -1,49 +1,51 @@
-import React from 'react';
-import { cardRequests } from '../db';
-import {
-    BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
-    XAxis, YAxis, Tooltip, ResponsiveContainer, Legend
-  } from 'recharts';
+import React from "react";
+import { cardRequests } from "../db";
+
 const CardRequest = () => {
   return (
     <>
-     <div className="bg-white p-4 rounded-lg shadow">
+      <div className="bg-white p-4 rounded-lg shadow">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="font-semibold text-lg">Recent Card Requests</h2>
+          <h1 className="font-[500] text-[#121212] text-[18px] ">
+            Recent Card Requests
+          </h1>
           <span className="text-gray-400 cursor-pointer">⤢</span>
         </div>
-        <table className="w-full text-sm">
+        <table className="w-full border-collapse">
           <thead>
-            <tr className="text-left text-gray-500">
-              <th className="pb-2">Branch</th>
-              <th>Card Type</th>
-              <th>Quantity</th>
-              <th>Status</th>
-              <th>Action</th>
+            <tr className="font-[500]  text-[#0000008F] text-[12px] bg-[#F1F7FF] h-[34px]">
+              <th className="text-left pl-4">Branch</th>
+              <th className="text-left">Card Type</th>
+              <th className="text-left">Quantity</th>
+              <th className="text-left">Status</th>
+              <th className="text-left">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-gray-200">
             {cardRequests.map((req, i) => (
-              <tr key={i} className="border-t">
-                <td className="py-2">{req.branch}</td>
-                <td>{req.type}</td>
-                <td>{req.qty}</td>
+              <tr key={i} className="h-[52px]">
+                <td className="pl-4 text-[10px] font-[400] text-[#475467] ">{req.branch}</td>
+                <td className="pl-4 text-[10px] font-[400] text-[#475467] ">{req.type}</td>
+                <td className="pl-4 text-[10px] font-[400] text-[#475467] ">{req.qty}</td>
                 <td>
-                  <span className={`text-xs px-2 py-1 rounded-full ${req.color}`}>
+                  <span
+                    className={`text-xs px-2 py-1 rounded-full ${req.color}`}
+                  >
                     {req.status}
                   </span>
                 </td>
                 <td>
-                  <a href="#" className="text-blue-600 hover:underline text-sm">View</a>
+                  <a href="#" className="text-[#014DAF] font-[700] hover:underline text-[10px] ">
+                    View
+                  </a>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default CardRequest
+export default CardRequest;

@@ -9,7 +9,7 @@ const WeekIncome = () => {
     <>
     <div className="bg-white p-4 rounded-lg shadow">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="font-semibold text-lg">This Week’s Income</h2>
+          <h2 className="font-[500] text-[18px] text-[#121212] ">This Week’s Income</h2>
           <span className="text-gray-400 cursor-pointer">⤢</span>
         </div>
         <ResponsiveContainer width="100%" height={250}>
