@@ -3,6 +3,9 @@ import MonthlyIssuanceBar from "../components/MonthlyIssuanceBar";
 import CardStatusPie from "../components/CardStatusPie";
 import WeeklyIncomeLine from "../components/WeeklyIncomeLine";
 import calenderLogo from "../assets/calender.png";
+import hRLogo from "../assets/Vector 15.png";
+import QuickAccess from "../components/QuickAccess";
+import Analytics from "../components/Analytics";
 
 const Dashboard = () => {
   return (
@@ -19,16 +22,25 @@ const Dashboard = () => {
             </p>
           </div>
           <div className="border-[1px] border-[#D0D5DD] rounded-[4px] flex items-center gap-8 p-2 ">
-            <div className="flex items-center">
+            <div className="flex items-center gap-2">
               <div>
                 <img src={calenderLogo} alt="calender img" />
               </div>
-              <h2>Today</h2>
+              <h2 className="font-[500] text-[#121212] text-[11px] ">Today</h2>
+            </div>
+            <div>
+              <img src={hRLogo} alt="" className="w-1" />
             </div>
             <h2 className="font-[400] text-[#121212]  text-[11px] ">
               11 Nov 2024
             </h2>
           </div>
+        </section>
+        <section>
+          <QuickAccess/>
+        </section>
+        <section>
+          <Analytics/>
         </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
