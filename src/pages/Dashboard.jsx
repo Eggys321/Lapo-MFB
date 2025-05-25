@@ -6,6 +6,10 @@ import calenderLogo from "../assets/calender.png";
 import hRLogo from "../assets/Vector 15.png";
 import QuickAccess from "../components/QuickAccess";
 import Analytics from "../components/Analytics";
+import MonthlyIssuanceChart from "../components/MonthlyIssuanceChart";
+import CardRequest from "../components/CardRequest";
+import WeekIncome from "../components/WeekIncome";
+import CardStatus from "../components/CardStatus";
 
 const Dashboard = () => {
   return (
@@ -37,14 +41,19 @@ const Dashboard = () => {
           </div>
         </section>
         <section>
-          <QuickAccess/>
+          <QuickAccess />
         </section>
         <section>
-          <Analytics/>
+          <Analytics />
         </section>
-
+        <section className=" bg-gray-50 min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <MonthlyIssuanceChart />
+          <CardRequest />
+          <WeekIncome />
+          <CardStatus />
+        </section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2">{/* <MonthlyIssuanceBar /> */}</div>
+          {/* <div className="lg:col-span-2"><MonthlyIssuanceBar /></div> */}
           <div>{/* <CardStatusPie /> */}</div>
         </div>
 

@@ -25,7 +25,7 @@ const Analytics = () => {
                   <div className="flex items-center gap-2 ">
                    
                     <img src={progress} alt={title} />
-                    <h3 className="font-[400] text-[#0000008F] text-[12px] "> {duration} </h3>
+                    <h3 className={`font-[400] ${duration === "Requires attention" ?  "text-[#E78020]" :"text-[#0000008F]" }  text-[12px]`} > {duration} </h3>
                   </div>
                 </div>
               </div>

@@ -68,3 +68,28 @@ export const analyticsData = [
         duration:"Requires attention"
     }
 ]
+
+export const cardRequests = [
+    { branch: 'Corporate', type: 'Instant', qty: 10, status: 'Ready', color: 'bg-green-100 text-green-700' },
+    { branch: 'Corporate', type: 'Personalized', qty: 10, status: 'In Progress', color: 'bg-yellow-100 text-yellow-700' },
+    { branch: 'Corporate', type: 'Personalized', qty: 10, status: 'Acknowledged', color: 'bg-blue-100 text-blue-700' },
+    { branch: 'Corporate', type: 'Instant', qty: 10, status: 'Pending', color: 'bg-gray-100 text-gray-700' },
+  ];
+
+ export const pieData = [
+    { name: 'Active', value: 2000, color: '#00B289' },
+    { name: 'Expired', value: 200, color: '#FFB800' },
+    { name: 'Inactive', value: 100, color: '#7F56D9' },
+    { name: 'Blocked', value: 100, color: '#FF647C' },
+    { name: 'Lost', value: 50, color: '#1D4ED8' },
+  ];
+
+ export  const incomeData = [
+    { name: 'Mon', income: 50 },
+    { name: 'Tue', income: 30 },
+    { name: 'Wed', income: 60 },
+    { name: 'Thu', income: 45 },
+    { name: 'Fri', income: 58 },
+    { name: 'Sat', income: 25 },
+    { name: 'Sun', income: 75 },
+  ];
