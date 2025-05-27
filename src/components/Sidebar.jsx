@@ -20,7 +20,7 @@ const Sidebar = ({ items }) => {
       </button>
 
       <div
-        className={`absolute md:static top-0 left-0 h-full w-64 bg-[#002F6C] shadow-lg py-10 px-2 transform transition-transform duration-300 z-40
+        className={`absolute md:static top-0 left-0 min-h-full w-64 bg-[#002F6C] shadow-lg py-10 px-2 transform transition-transform duration-300 z-40
         ${isOpen ? "translate-x-0" : "-translate-x-full"}
         md:translate-x-0 md:block`}
       >
