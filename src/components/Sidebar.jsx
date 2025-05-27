@@ -14,13 +14,11 @@ const Sidebar = ({ items }) => {
       <button
         className="md:hidden absolute top-10 left-[-8px] z-50 text-white  p-2 rounded"
         onClick={toggleSidebar}
-        style={{color:"black"}}
+        style={{ color: "black" }}
       >
-<span class="material-symbols-outlined">
-more_vert
-</span>      </button>
+        <span class="material-symbols-outlined">more_vert</span>{" "}
+      </button>
 
-      {/* Sidebar */}
       <div
         className={`absolute md:static top-0 left-0 h-full w-64 bg-[#002F6C] shadow-lg py-10 px-2 transform transition-transform duration-300 z-40
         ${isOpen ? "translate-x-0" : "-translate-x-full"}
@@ -43,7 +41,7 @@ more_vert
                         : "text-[#D0D5DD]"
                     }`
                   }
-                  onClick={() => setIsOpen(false)} // Auto-close on mobile
+                  onClick={() => setIsOpen(false)}
                 >
                   <img src={item.icon} alt={item.iconName} className="mr-3" />
                   {item.name}
