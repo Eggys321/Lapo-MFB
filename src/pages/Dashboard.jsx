@@ -12,12 +12,12 @@ const Dashboard = () => {
   return (
     <>
       <main className="p-6 space-y-6">
-        <section className="flex justify-between items-center">
+        <section className="flex flex-wrap justify-between items-center">
           <div>
             <h1 className="font-[700] text-[#121212] text-[18px] leading-[2] ">
               Hi Nazeer, what would you like to do today?
             </h1>
-            <p className="text-[#121212] text-[13px] font-[500] ">
+            <p className="text-[#121212] text-[13px] font-[500] py-4 md:py-0 ">
               Last login:{" "}
               <span className="font-[400]">26/11/2024 14:39:58</span>
             </p>

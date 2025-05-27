@@ -5,7 +5,7 @@ import cardinfraLogo from "../assets/Vector (21).svg";
 
 const Sidebar = ({ items }) => {
   return (
-    <div className="w-64 bg-[#002F6C] shadow-lg py-10 px-2">
+    <div className="hidden md:block w-64 bg-[#002F6C] shadow-lg py-10 px-2">
       <div className=" pb-10">
         <img src={navLogo} alt="nav logo" className="w-[138.32px]" />
       </div>

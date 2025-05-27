@@ -12,11 +12,11 @@ const Analytics = () => {
             <img src={longHr} alt="" className="w-full" />
           </div>
         </section>
-        <section className=" flex justify-between gap-2">
+        <section className=" flex flex-wrap justify-between gap-2">
           {analyticsData.map((datum) => {
             const { id, img, title, amt, progress, duration } = datum;
             return (
-              <div key={id} className="border-1 border-[#E2E2E2] rounded-[10px] w-[290px] h-[110px] px-3 pt-3 pb-2">
+              <div key={id} className="border-1 border-[#E2E2E2] rounded-[10px] w-full md:w-[290px] h-[110px] px-3 pt-3 pb-2">
                 <img src={img} alt={title} />
                
                 <h2 className="font-[500] text-[#0000008F] text-[14px] pt-2 pb-3 ">{title} </h2>

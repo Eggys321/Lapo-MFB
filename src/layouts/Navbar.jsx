@@ -17,14 +17,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between px-6 py-3 items-center border-b-1 border-b-[#DEDEDF] ">
-      <div className="flex items-center gap-3">
+    <nav className="flex flex-wrap justify-between px-6 py-3 items-center border-b-1 border-b-[#DEDEDF] ">
+      <div className="flex items-center gap-3 pb-2 md:pb-0">
         <img src={dashboardLogo} alt="home logo" />
         <h2 className="font-[500] text-[#001735] text-[13px] ">
           {getPath ? formatTitle(getPath.path) : ""}
         </h2>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center justify-between gap-18  md:gap-6">
         <form className="relative">
           <input
             type="search"
@@ -38,8 +38,11 @@ const Navbar = () => {
             alt="search logo"
           />
         </form>
+       <div className="flex">
+
         <img src={notificationLogo} alt="notication logo" />
         <img src={avatarLogo} alt="avatar logo" />
+       </div>
       </div>
     </nav>
   );
