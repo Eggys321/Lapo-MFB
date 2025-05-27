@@ -38,7 +38,7 @@ const CardStatus = () => {
           </div>
         </div>
         
-        <div className="w-full  mt-6 flex justify-center gap-4">
+        <div className="w-full  mt-6 flex justify-center gap-4 flex-wrap ">
           {pieData.map((item, i) => (
             <div key={i} className="flex items-center">
               <span 

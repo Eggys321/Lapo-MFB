@@ -24,7 +24,7 @@ const Navbar = () => {
           {getPath ? formatTitle(getPath.path) : ""}
         </h2>
       </div>
-      <div className="flex items-center justify-between gap-18  md:gap-6">
+      <div className="flex items-center justify-between gap-14  md:gap-6">
         <form className="relative">
           <input
             type="search"
