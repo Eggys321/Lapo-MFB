@@ -37,7 +37,7 @@ const Dashboard = () => {
             </h2>
           </div>
         </section>
-        <section>
+        <section className="w-full max-w-full overflow-x-auto">
           <QuickAccess />
         </section>
         <section>

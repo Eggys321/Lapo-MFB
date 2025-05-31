@@ -5,8 +5,9 @@ import chevronLeft from "../assets/chevron logo.svg";
 const QuickAccess = () => {
   return (
     <>
-      <main className='border-[1px] border-[#E2E2E2] h-[106px] rounded-[10px] px-3 pt-3 pb-2'>
+      <main className='border-[1px] overflow-hidden border-[#E2E2E2] h-[106px] rounded-[10px] px-3 pt-3 pb-2'>
         <h2 className='font-[500] text-[#121212] text-[16px]'>Your Quick Access</h2>
+          <div className='overflow-x-auto  hide-scrollbar'>
 
         <section className='flex justify-between overflow-x-auto md:overflow-x-visible flex-nowrap gap-2 pt-3'>
           {quickAccessData.map((datum) => {
@@ -23,6 +24,7 @@ const QuickAccess = () => {
             );
           })}
         </section>
+          </div>
       </main>
     </>
   );
